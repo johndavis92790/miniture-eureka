@@ -1,7 +1,14 @@
-[
+{
+  "notes": [
     {
-        "id": "396chjp1j6ckyhp32s9",
-        "title":"Test Title",
-        "text":"Test text"
+      "id": "396chjp1j6ckyhp32s9",
+      "title": "Test Title",
+      "text": "Test text"
+    },
+    {
+      "id": "396chjp2z04kyhuq8zq",
+      "title": "aw5tw5rtt",
+      "text": "w365w346"
     }
-]
+  ]
+}
