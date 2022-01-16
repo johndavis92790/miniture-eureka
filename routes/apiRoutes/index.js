@@ -1,7 +1,8 @@
 
 const router = require('express').Router();
-
 const uniqid = require('uniqid'); 
+
+
 
 const notes = require('../../db/db');
 
@@ -19,10 +20,22 @@ router.get('/notes/:id', (req, res) => {
 });
 
 router.post('/notes', (req, res) => {
-  req.body.id = notes.length.toString();
+  // const resJson = req.body;
+  console.log('req', req.body);
+  // console.log('res', res);
+  const id = uniqid();
+  console.log(id);
 
-  const newNote = createNewNote(req.body, notes);
-  res.json(note);
+  // JSON.stringify({ id }, null, 0)
+
+  var postNote = req.body;
+  postNote.push(id);
+
+  console.log(postNote);
+  // const newNote = createNewNote(req.body, notes);
+
+  
+  res.json(postNote);
   
 });
 
